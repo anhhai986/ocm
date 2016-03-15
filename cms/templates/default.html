@@ -16,10 +16,6 @@
 	      	margin-top: 0px;
 		  }
 	      
-	      #page_title {
-	      	  color: #fff;
-		  }
-		  
 		  #page_content, #footer {
 		  	margin-left: 0.6em;
 		  }
@@ -76,13 +72,6 @@
 		  	  box-shadow: 3px 3px 7px #ccc;
 		  }
 		  
-		  #beep{
-		  	  background-color: rgb(27, 27, 27);
-			  background-image: linear-gradient(rgb(94, 94, 94), rgb(44, 44, 44));
-			  background-repeat: repeat-x;
-			  border-bottom: solid 3px #33BB33;
-		  }
-		
 		.table-striped {
 			background-color: white;
 		}		
@@ -186,7 +175,7 @@
 	</head>
 	<body>
 	<div class="navbar">
-		<div class="navbar-inner" id="beep">
+		<div class="navbar-inner">
 			<div class="container" style="width: auto; padding: 0px 20px 0px 50px; background-image: url('%%[base_url]%%/images/icon-39.png'); background-repeat: no-repeat;">
 				<a class="brand" href="%%[base_url]%%" id="page_title"><!-- <img src="%%[base_url]%%/images/icon.png" height="16" width="16" /> -->
 					%%[org_name]%%<!-- org_name --></a>
@@ -199,9 +188,9 @@
 
 				<div class="btn-group pull-right">
 
-					<a class="btn btn-inverse" href="%%[base_url]%%/password.php"><i class="icon-lock icon-white"></i>&nbsp;%%[user_handle]%%<!-- username --></a>
-					<a class="btn btn-inverse" href="%%[base_url]%%/services/logout.php">Log Off</a>
-					<a class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" href="#">
+					<a class="btn" href="%%[base_url]%%/password.php"><i class="icon-lock"></i>&nbsp;%%[user_handle]%%<!-- username --></a>
+					<a class="btn" href="%%[base_url]%%/services/logout.php">Log Off</a>
+					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
 					Shortcuts <span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu">
