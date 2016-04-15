@@ -212,6 +212,34 @@
 		</div>
 	</div>
 
+	<div class="row" style="border-bottom: solid #ccc 5px; padding: 12px;">
+		<div class="span4">
+			<a href="%%[base_url]%%/"><img src="%%[base_url]%%/images/icon-39.png">%%[org_name]%%<!-- org_name --></a>
+		</div>
+		<div class="span4">
+					<a class="btn" href="%%[base_url]%%/password.php"><i class="icon-lock"></i>&nbsp;%%[user_handle]%%<!-- username --></a>
+					<a class="btn" href="%%[base_url]%%/services/logout.php">Log Off</a>
+					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+					Shortcuts <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="%%[base_url]%%/site_map.php" accesskey="m">Site <strong>M</strong>ap</a></li>
+						<li><a href="%%[base_url]%%/case_list.php?mode=open" accesskey="l">Case <strong>L</strong>ist</a></li>
+						<li><a href="%%[base_url]%%/addressbook.php" accesskey="d">A<strong>d</strong>dress Book</a></li>
+						<li><a href="%%[base_url]%%/cal_day.php" accesskey="c"><strong>C</strong>alendar</a></li>
+						<li><a href="%%[base_url]%%/intake2.php" accesskey="i"><strong>I</strong>ntake</a></li>
+						<li><a href="%%[base_url]%%/activity.php?screen=compose&act_type=T" accesskey="t"><strong>T</strong>ime Slip</a></li>
+						<li><a href="%%[base_url]%%/reports/" accesskey="r"><strong>R</strong>eports</a></li>
+						<li><a href="mailto:%%[admin_email]%%" accesskey="p">Su<strong>p</strong>port</a></li>
+  					</ul>
+		</div>
+		<div class="span4">
+<form class="navbar-form pull-right" name="sform" method="get" action="%%[base_url]%%/search.php" id="sform">
+				<input name="s" value="" accesskey="f" type="text" id="searchinput" autocomplete="off" data-provide="typeahead" data-items="4">
+				<input name="search_submit" value="Search" type="submit" class="btn">
+				</form>
+		</div>
+	</div>
 	<div id="page_content" class="container">
 		<!-- begin page content -->
 		%%[content]%%
