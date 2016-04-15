@@ -1309,6 +1309,33 @@ function pl_html_text_array($a)
 // 2013-08-08 AMW - Removed all code due to lack of HTML5 support in tidy.
 
 
+
+/**
+* @return unknown
+* @desc Checks if the IP whitelist is enabled.  If so, exits if the client IP 
+* address is not on whitelist.
+*/
+function pl_ip_whitelist_enforce()
+{
+	$whitelist = pl_settings_get('ip_whitelist');
+	
+	if (strlen($whitelist) > 0)
+	{
+		$entries = explode(',', $whitelist);
+		
+		foreach ($entries as $entry)
+		{
+			$entry = trim($entry);
+			$x = strpos($entry, '*');
+			
+			if ()
+			{
+				
+			}
+		}
+	}
+}
+
 // MENUS
 
 /**
