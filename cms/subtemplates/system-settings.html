@@ -3,7 +3,7 @@
 		%%[flags]%%
 		<form method="POST" autocomplete="off">
 	</div>
-	<div style="float:left;padding:5px" id="form_col1" class="de">
+	<div class="span4">
 		<h2>Site Settings</h2>
 		Program Name<br/>
 		%%[owner_name,input_text]%%<br/>
@@ -23,7 +23,7 @@
 		%%[open_outcomes,yes_no,checkbox,label=Open Outcomes Tab when a Case is Closed]%%<br/>
 		%%[multi_outcomes,yes_no,checkbox,label=Allow Multiple Outcome Selections]%%<br/>
 	</div>
-	<div style="float:left;padding:5px" id="form_col2" class="de">
+	<div class="span4">
 	<h2>&nbsp;</h2>
 		Session Timeout in Minutes<br/>
 		%%[session_timeout,input_text,default=120]%%<br/>
@@ -36,10 +36,15 @@
 		<br/>
 		%%[enable_system,yes_no,checkbox,label=Enable Logins]%%<br/>
 		%%[force_https,yes_no,checkbox,label=Allow Only Secure (HTTPS) Logins]%%<br/>
+		IP Whitelist:<br>
+		%%[ip_whitelist,input_textarea]%%<br>
+		Whitelist entries should be separated by commas.  Entries can either be
+		a single IP address, or a range of IP addresses ending in a "*" wildcard
+		character.<br>
 		%%[enable_compression,yes_no,checkbox,label=Web Accelerator]%%<br/>
 		%%[enable_benchmark,yes_no,checkbox,label=Benchmark]%%<br/>
 	</div>
-	<div style="float:left;padding:5px" id="form_col3" class="de">
+	<div class="span3">
 	<h2>Install Settings</h2>
 		Web Site Base Path:<br/>
 		<input type="text" name="dont_use_base_url" value="%%[base_url]%%" disabled>

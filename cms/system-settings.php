@@ -99,7 +99,7 @@ $list_of_settings = array('cookie_prefix', 'enable_system', 'enable_compression'
 	'owner_name', 'admin_email', 'act_interval', 
 	'time_zone', 'time_zone_offset', 'session_timeout', 'pass_min_strength',
 	'pass_min_length', 'password_expire', 'force_https', 'autofill_time_funding',
-	'open_outcomes', 'multi_outcomes');
+	'open_outcomes', 'multi_outcomes', 'ip_whitelist');
 
 switch ($action)
 {
